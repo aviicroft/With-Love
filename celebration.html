@@ -2084,7 +2084,7 @@
 
         // Music settings
         music.volume = 0.4;
-        const startTime = 9; // Start from 9 seconds
+        const startTime = 0; // Start from the beginning
 
         // Create visualizer bars
         const barsContainer = document.createElement('div');
@@ -2211,7 +2211,7 @@
             }
         });
 
-        // When song loops, restart from 9 seconds
+        // When song loops, restart from the beginning
         music.addEventListener('ended', () => {
             music.currentTime = startTime;
             music.play();
